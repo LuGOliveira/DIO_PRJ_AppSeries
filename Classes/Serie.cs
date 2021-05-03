@@ -26,7 +26,8 @@ namespace DIO_PRJ_AppSeries
             retorno += "Gênero: " + this.Genero + Environment.NewLine;
             retorno += "Titulo: " + this.Titulo + Environment.NewLine;
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
-            retorno += "Ano de lançamento: " + this.Ano;
+            retorno += "Ano de lançamento: " + this.Ano + Environment.NewLine;
+            retorno += "Excluido: " + this.Excluido;
             return retorno;
         }
         public string retornaTitulo(){
@@ -38,6 +39,9 @@ namespace DIO_PRJ_AppSeries
 
         public void Excluir(){
             this.Excluido = true;
+        }
+        public bool retornaExcluido(){
+            return this.Excluido;
         }
     }
 }

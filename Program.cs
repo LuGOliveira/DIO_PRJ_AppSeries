@@ -20,16 +20,16 @@ namespace DIO_PRJ_AppSeries
                         InserirSerie();
                         break;
                     case "3":
-                        //AtualizaSerie();
+                        AtualizarSerie();
                         break;
                     case "4":
-                        //ExcluiSerie();
+                        ExcluirSerie();
                         break;
                     case "5":
-                        //VisualizarSerie();
+                        VisualizarSerie();
                         break;
                     case "C":
-                        //Console.Clear();
+                        Console.Clear();
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();                        
@@ -54,7 +54,8 @@ namespace DIO_PRJ_AppSeries
             }
             foreach( var serie in lista)
             {
-                Console.WriteLine("#ID {0}: - {1}", serie.retornaID(), serie.retornaTitulo());
+                var excluido = serie.retornaExcluido();
+                Console.WriteLine("#ID {0}: - {1}{2}", serie.retornaID(), serie.retornaTitulo(), (excluido? " *Excluido*" : ""));
             }
         }
 
@@ -86,6 +87,53 @@ namespace DIO_PRJ_AppSeries
             repositorio.Insere(novaSerie);
 
         }
+
+         private static void AtualizarSerie(){
+            Console.WriteLine("Qual série deseja atualizar?"); 
+            int idSerie = int.Parse(Console.ReadLine());
+
+            foreach(int i in Enum.GetValues(typeof(Genero))){
+                Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
+
+            }
+            Console.WriteLine("Escolha um genêro: ");
+            int entradaGenero = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe um Titulo: ");
+            string entradaTitulo = Console.ReadLine().ToUpper();
+
+            Console.WriteLine("Informe o ano de lançamento: ");
+            int entradaAno = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Inclua uma descrição: ");
+            string entradaDescricao = Console.ReadLine().ToUpper();
+
+            Serie atualizaSerie = new Serie(id: idSerie,
+                                        genero: (Genero)entradaGenero,
+                                        titulo: entradaTitulo, 
+                                        ano: entradaAno,
+                                        descricao: entradaDescricao);
+
+            repositorio.Atualiza(idSerie, atualizaSerie);
+
+        }
+
+        private static void ExcluirSerie(){
+            Console.WriteLine("Qual série deseja excluir?"); 
+            int idSerie = int.Parse(Console.ReadLine());
+            repositorio.Exclui(idSerie);
+        }
+
+        private static void VisualizarSerie(){
+            Console.WriteLine("Qual série deseja consultar?"); 
+            int idSerie = int.Parse(Console.ReadLine());
+
+            var serie = repositorio.RetornaPorId(idSerie);
+
+            Console.WriteLine(serie); 
+
+        }
+
         private static string ObterOpcaoUsuario()
         {
             Console.WriteLine();
