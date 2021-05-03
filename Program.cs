@@ -6,7 +6,7 @@ namespace DIO_PRJ_AppSeries
     {
         static void Main(string[] args)
         {
-            //Serie meuObj = new Serie();
+            Serie meuObj = new Serie();
             Console.WriteLine("Hello World!");
         }
     }
