@@ -1,0 +1,13 @@
+C:\workspace\DIO\DIO_PRJ_AppSeries\bin\Debug\netcoreapp3.1\DIO_PRJ_AppSeries.exe
+C:\workspace\DIO\DIO_PRJ_AppSeries\bin\Debug\netcoreapp3.1\DIO_PRJ_AppSeries.deps.json
+C:\workspace\DIO\DIO_PRJ_AppSeries\bin\Debug\netcoreapp3.1\DIO_PRJ_AppSeries.runtimeconfig.json
+C:\workspace\DIO\DIO_PRJ_AppSeries\bin\Debug\netcoreapp3.1\DIO_PRJ_AppSeries.runtimeconfig.dev.json
+C:\workspace\DIO\DIO_PRJ_AppSeries\bin\Debug\netcoreapp3.1\DIO_PRJ_AppSeries.dll
+C:\workspace\DIO\DIO_PRJ_AppSeries\bin\Debug\netcoreapp3.1\DIO_PRJ_AppSeries.pdb
+C:\workspace\DIO\DIO_PRJ_AppSeries\obj\Debug\netcoreapp3.1\DIO_PRJ_AppSeries.csprojAssemblyReference.cache
+C:\workspace\DIO\DIO_PRJ_AppSeries\obj\Debug\netcoreapp3.1\DIO_PRJ_AppSeries.AssemblyInfoInputs.cache
+C:\workspace\DIO\DIO_PRJ_AppSeries\obj\Debug\netcoreapp3.1\DIO_PRJ_AppSeries.AssemblyInfo.cs
+C:\workspace\DIO\DIO_PRJ_AppSeries\obj\Debug\netcoreapp3.1\DIO_PRJ_AppSeries.csproj.CoreCompileInputs.cache
+C:\workspace\DIO\DIO_PRJ_AppSeries\obj\Debug\netcoreapp3.1\DIO_PRJ_AppSeries.dll
+C:\workspace\DIO\DIO_PRJ_AppSeries\obj\Debug\netcoreapp3.1\DIO_PRJ_AppSeries.pdb
+C:\workspace\DIO\DIO_PRJ_AppSeries\obj\Debug\netcoreapp3.1\DIO_PRJ_AppSeries.genruntimeconfig.cache
