@@ -36,5 +36,6 @@ namespace DIO_PRJ_AppSeries
         {
             return listaSerie[id];
         }
+
     }
 }
